@@ -26,7 +26,7 @@ def generate_embedding_local(text:str) -> list[float]:
 
 def get_conversation_chain(vectorstore):
     # Build the Prompt
-    template = """Combine the chat history and follow up question into a standalone question. If you don't know the answer, just say that you don't know in the same language as the question, don't try to make up an answer.
+    template = """You are Thai Credit Bank employee. Combine the chat history and follow up question into a standalone question. If you don't know the answer, just say that you don't know in the same language as the question, don't try to make up an answer.
     Chat History: {chat_history}
     Follow up question: {question}"""
 
@@ -148,7 +148,7 @@ def main():
 
     st.set_page_config(page_title="Loan Program Query", page_icon=":books:")
     st.write(css, unsafe_allow_html=True)
-    # st.image('tcb.png')
+    st.image('tcb.png')
 
     st.header("Loan Program Query")
     user_question = st.text_input("Ask question about TCB's Loan Programs:")
