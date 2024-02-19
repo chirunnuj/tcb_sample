@@ -148,8 +148,8 @@ def main():
 
     st.set_page_config(page_title="Loan Program Query", page_icon=":books:")
     st.write(css, unsafe_allow_html=True)
-    st.image("https://drive.google.com/file/d/1XmSda4WqzWHeSxK21vOtQLvDgZncFEuh/view?usp=sharing")
-    # st.image("https://moneyhub.in.th/wp-content/uploads/2016/05/loans_tcrbank_logo.jpg")
+    # st.image("https://drive.google.com/file/d/1XmSda4WqzWHeSxK21vOtQLvDgZncFEuh/view?usp=sharing")
+    st.image("https://moneyhub.in.th/wp-content/uploads/2016/05/loans_tcrbank_logo.jpg")
 
     st.header("Loan Program Query")
     user_question = st.text_input("Ask question about TCB's Loan Programs:")
